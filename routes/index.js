@@ -7,8 +7,12 @@ router.get('/', function(req, res, next) {
 });
 
 /* Страница Программ*/
-router.get('/programs', function(req, res, next) {
-    res.send("<h1>Страница Программ</h1>")
+router.get('/pr_pro', function(req, res, next) {
+    res.render('program', {
+        title: "Premier pro",
+        picture: "images/pro.png",
+        desc: "Профессиональная програрамма для монтажа видео."
+    });
 });
 
 module.exports = router;
